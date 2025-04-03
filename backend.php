@@ -14,8 +14,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $_SESSION["unm"]=$_username;
         header("location:home_page.php");
         exit();
-        echo "hello $_username  you are logged in .<br>";
-        echo "your password is ".$valid_password;
     } else {
         header("location:login.php?error=$error");
         exit();
