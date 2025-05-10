@@ -4,7 +4,7 @@ session_start();
 $valid_user_name = "saugat";
 $valid_password= password_hash("12345",PASSWORD_DEFAULT);
 
-$error = "incorrect username or<br> password";
+$error = "incorrect username or password";
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $_username = $_POST['uname'];
@@ -20,6 +20,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
 
 }
-0.
+
 ?>
 

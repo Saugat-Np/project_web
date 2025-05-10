@@ -13,11 +13,13 @@
                 <div class="heading">
                     <h1>LOGIN</h1>
                 </div>
-                <?php
-                if(isset($_GET["error"])){
-                    echo "<p style='color:red;'>".$_GET["error"]."</p>";
-                }
-                ?>
+                <div class="error">
+                    <?php
+                    if(isset($_GET["error"])){
+                        echo "<p style='color:red;'>".$_GET["error"]."</p>";
+                    }
+                    ?>
+                </div>
                 <div class="form_area">
                     <form action="backend.php" method="POST">
                         <fieldset>
@@ -33,7 +35,7 @@
                             <input class="input" type="password" placeholder="input your password" name="pword" required>
                         </fieldset>
                         <fieldset>
-                            <button type="submit">LOGIN</button>
+                            <button class="log"type="submit">LOGIN</button>
                         </fieldset>
                     </form>
                 </div>

@@ -1,10 +1,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body,html{
     height: 100%;
+    background: linear-gradient(#87adc9,#51a4af 60%);
 }
+
 .login_section{
     display: flex;
     justify-content: center;
@@ -15,6 +18,9 @@ body,html{
 }
 h1{
     color: rgb(12, 12, 12);
+}
+.error{
+    font-size: 15px;
 }
 .card{
     background-color: rgb(255, 255, 255);
@@ -30,32 +36,24 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
 }
-button{
+.log{
     color: black;
     border: none;
     margin: 5px 60px;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 25px;
 }
-button:hover{
+.log:hover{
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: rgb(13, 47, 119);
     border: none;
     margin: 5px 60px;
-    padding: 15px 30px;
+    padding: 10px 25px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 25px;
 }
-button:active{
-    color: rgb(235, 3, 3);
-    background-color: rgb(38, 183, 206);
-    border: none;
-    margin: 5px 60px;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 15px;
-}
+
 fieldset{
     margin: 10px 0px ;
     padding: 5px;
@@ -64,8 +62,54 @@ label{
     color: orange;
 }
 .input{
-    padding: 10px 30px;
+    padding: 20px 30px;
     border-radius: 10px;
-    border: 1px solid rgb(253, 24, 24);
+    border: 1px solid rgb(0, 132, 255);
     height: 25px;
+    margin: 0px 0px 5px 10px;
+
+
 }
+#nav{
+    display: flex;
+    background:linear-gradient(to right,rgb(20, 20, 103) , rgb(29, 129, 140) 70%);
+    width: 100%;
+    height: 6%;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 15px;;
+    align-items: center;
+    width: 100%;
+    margin-right: 40px;
+
+}
+.greet{
+    padding: 5px;
+    color: orange;
+    margin-left: 40px;
+    text-transform: uppercase;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.nav-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: bisque;
+    text-transform: capitalize;
+}
+.nav-btn:hover{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(44, 224, 134);
+}
+
+
